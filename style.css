@@ -1,0 +1,189 @@
+.portrait{
+  width:200px;
+  height:200px;
+}
+
+.darkback{
+  background-color: #C0E3E7;
+}
+.container{
+  margin:auto;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+body{
+  /* background: url('img/background_texture.jpg'); */
+  background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.container1{
+  width:88% !important ;
+  margin:auto !important;
+}
+ .topmargin{
+    margin-top: 10vh;
+
+ }
+
+ .sticker{
+   background-color: #C0E3E7;
+   height: auto;
+   width:auto;
+   margin-top:0vh;}
+   /* margin-left: 1vw; } */
+
+ /* .portrait{
+   margin:auto;
+   border-radius: 500px;
+ } */
+
+ .sticker {
+  position: fixed;
+}
+/* 
+@media only screen and (max-width : 480px) {
+  .sticker {
+      position: absolute;
+      
+  }
+} */
+
+
+​.expdate { /* our rectangle */
+  
+  background-color: #663399;
+  
+ 
+}
+.expdate {
+  background: #C0E3E7;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height:1.2;
+  
+
+  /* added */
+  display: inline-block;
+  position: relative;
+  margin-right: .65em; 
+  /* make some space for the pointy bit */
+ 
+}
+
+.expdate:after {
+  content:"";
+  position: absolute;
+  top:0;
+  left:100%;
+  width:0;
+  height:0; 
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:#C0E3E7; 
+  /* the opposite of the pointing direction */
+  border-top-width:.6rem;
+  border-right-width:.6rem;
+  border-bottom-width:.6rem;
+  border-left-width:.6rem;
+  border-style:solid;
+}
+
+h4{
+  font-weight: 700;
+}
+
+.hiddenportrait{
+  background-color: #C0E3E7;
+}
+
+.navi{
+  position: fixed;
+  top:50vh;;
+  left:0.3%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0%;
+  background-color: rgba(108, 117, 125, 0.404);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 55px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(10, 10, 10, 0.445);
+}
+
+.portfolio1:hover .overlay{
+  opacity:1;
+}
+
+#myBtn {
+  
+  opacity: 0;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+   /* Increase font size */
+}
+
+#myBtn:hover {
+  color: #85C4CB; /* Add a dark-grey background on hover */
+}
+
